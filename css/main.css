@@ -225,8 +225,8 @@ input:focus, select:focus, textarea:focus {
   .col {
     flex-basis: 100%;
   }
-  .body {
-    padding: 20px;
+  body {
+    padding: 44px;
     max-width: 100%;
   }
   .row {
