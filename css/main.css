@@ -236,7 +236,7 @@ input:focus, select:focus, textarea:focus {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-      background-color: #0E162A;
+      background-color: #1A2132;
   }
   p {
     color:#A8B8CD;
