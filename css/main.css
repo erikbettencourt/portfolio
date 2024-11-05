@@ -29,21 +29,18 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 p {
-    color: #333;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
 }
 a {
-    color: #1A0DAB;
     text-decoration: none;
 }
 a:hover {
     text-decoration: underline;
 }
 h1 {
-    color: #1C1C57;
     font-size: 48px;
     font-style: normal;
     font-weight: 800;
@@ -62,14 +59,12 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 h3 {
-  color: #1C1C57;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
 }
 .lede {
-  color: #1C1C57;
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
@@ -194,8 +189,6 @@ button, .btn {
   align-items: center;
   gap: 8px;
   border-radius: 100px;
-  border: 2px solid var(--Linear, #8548DA);
-  background: var(--White, #FFF);
 }
 .ctaGroup {
   display: flex;
@@ -237,5 +230,64 @@ input:focus, select:focus, textarea:focus {
   .cta {
     margin: 8px;
     
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+      background-color: #0E162A;
+  }
+  p {
+    color:#A8B8CD;
+  }
+  a {
+    color: #60A5FA;
+  }
+  h1 {
+    color: #E2E8F0;
+  }
+  h3 {
+    color: #E2E8F0;
+  }
+  .lede {
+    color: #E2E8F0;
+  }
+  .caseStudy {
+    border: 1px solid #353F4F;
+    background: #1D293B;
+  }
+  .cta {
+    border: 2px solid var(--Linear, #8548DA);
+    background: #122036;
+  }
+}
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+      background-color: white;
+  }
+  p {
+    color: #333;
+  }
+  a {
+    color: #1A0DAB;
+  }
+  h1 {
+    color: #1C1C57;
+  }
+  h3 {
+    color: #1C1C57;
+  }
+  .lede {
+    color: #1C1C57;
+  }
+  .caseStudy {
+    border: 1px solid #C9D6FE;
+    background: #F2F5FF;
+  }
+  .cta {
+    border: 2px solid var(--Linear, #8548DA);
+    background: var(--White, #FFF);
   }
 }
