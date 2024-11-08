@@ -53,8 +53,8 @@ h2 {
     font-weight: 800;
     line-height: 32px;
     letter-spacing: 0.4px;
-    background: rgb(133,72,218);
-    background: linear-gradient(90deg, rgba(133,72,218,1) 0%, rgba(76,133,244,1) 35%, rgba(204,15,151,1) 100%);    background-clip: text;
+    background: linear-gradient(90deg, rgba(133,72,218,1) 0%, rgba(76,133,244,1) 35%, rgba(204,15,151,1) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -288,6 +288,6 @@ input:focus, select:focus, textarea:focus {
   }
   .cta {
     border: 2px solid #1A0DAB;
-    background: var(--White, #FFF);
+    background: #FFF;
   }
 }
