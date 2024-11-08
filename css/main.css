@@ -53,10 +53,6 @@ h2 {
     font-weight: 800;
     line-height: 32px;
     letter-spacing: 0.4px;
-    background: linear-gradient(90deg, rgba(133,72,218,1) 0%, rgba(76,133,244,1) 35%, rgba(204,15,151,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 h3 {
   font-size: 24px;
@@ -242,10 +238,16 @@ input:focus, select:focus, textarea:focus {
     color:#A8B8CD;
   }
   a {
-    color: #60A5FA;
+    color: #37BDF9;
   }
   h1 {
     color: #E2E8F0;
+  }
+  h2 {
+    background: linear-gradient(90deg, #93CE96 20%, #25D0D3 50%, #47C188 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     color: #E2E8F0;
@@ -258,7 +260,7 @@ input:focus, select:focus, textarea:focus {
     background: #1D293B;
   }
   .cta {
-    border: 2px solid #60A5FA;
+    border: 2px solid #37BDF9;
     background: #1A2132;
   }
 }
@@ -271,10 +273,16 @@ input:focus, select:focus, textarea:focus {
     color: #333;
   }
   a {
-    color: #1A0DAB;
+    color: #3D33AB;
   }
   h1 {
     color: #1C1C57;
+  }
+  h2 {
+    background: linear-gradient(90deg, #8249DD 20%, #466ED4 50%, #A5168E 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     color: #1C1C57;
@@ -287,7 +295,7 @@ input:focus, select:focus, textarea:focus {
     background: #F2F5FF;
   }
   .cta {
-    border: 2px solid #1A0DAB;
+    border: 2px solid #3D33AB;
     background: #FFF;
   }
 }
