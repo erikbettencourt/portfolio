@@ -242,6 +242,9 @@ input:focus, select:focus, textarea:focus {
   a {
     color: #37BDF9;
   }
+  a:hover {
+    background-color: #1D293B;
+  }
   h1 {
     color: #E2E8F0;
   }
@@ -276,6 +279,9 @@ input:focus, select:focus, textarea:focus {
   }
   a {
     color: #3D33AB;
+  }
+  a:hover {
+    background-color: #F2F5FF;
   }
   h1 {
     color: #1C1C57;
