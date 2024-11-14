@@ -225,7 +225,9 @@ input:focus, select:focus, textarea:focus {
   }
   .cta {
     margin: 8px;
-    
+  }
+  .caseStudy {
+    padding: 20px;
   }
 }
 
