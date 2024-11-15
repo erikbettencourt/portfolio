@@ -70,6 +70,9 @@ h3 {
 .bold {
   font-weight: 700;
 }
+.pipe {
+  font-weight: 500;
+}
 
 /* Layout */
 .container {
