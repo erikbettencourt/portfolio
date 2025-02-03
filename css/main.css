@@ -29,13 +29,14 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 p {
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
 }
 a {
     text-decoration: none;
+    font-size: 16px;
 }
 a:hover {
     text-decoration: underline;
@@ -58,6 +59,12 @@ h3 {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  line-height: 36px;
+}
+h4 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 36px;
 }
 
@@ -137,18 +144,22 @@ li {
   align-items: flex-start;
   gap: 20px;
 }
-.professionalExperience {
+.aboutMe{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
 }
-.workExperience {
-  display: flex;
+.contactCard {
   width: 100%;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
+  align-items: center;
   gap: 8px;
+}
+.avatar {
+  width: 144px;
 }
 
 
@@ -251,13 +262,10 @@ input:focus, select:focus, textarea:focus {
       background-color: #1A2132;
   }
   p {
-    color:#A8B8CD;
+    color:#b9c9de;
   }
   a {
     color: #37BDF9;
-  }
-  a:hover {
-    background-color: #1D293B;
   }
   h1 {
     color: #E2E8F0;
@@ -269,6 +277,9 @@ input:focus, select:focus, textarea:focus {
     -webkit-text-fill-color: transparent;
   }
   h3 {
+    color: #E2E8F0;
+  }
+  h4 {
     color: #E2E8F0;
   }
   .lede {
@@ -298,9 +309,7 @@ input:focus, select:focus, textarea:focus {
   a {
     color: #3D33AB;
   }
-  a:hover {
-    background-color: #F2F5FF;
-  }
+
   h1 {
     color: #1C1C57;
   }
@@ -311,6 +320,9 @@ input:focus, select:focus, textarea:focus {
     -webkit-text-fill-color: transparent;
   }
   h3 {
+    color: #1C1C57;
+  }
+  h4 {
     color: #1C1C57;
   }
   .lede {
