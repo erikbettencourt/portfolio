@@ -161,6 +161,10 @@ li {
 .avatar {
   width: 144px;
 }
+.about {
+  font-size: 18px;
+  line-height: 32px;
+}
 
 
 
@@ -215,6 +219,10 @@ button, .btn {
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.aboutLede {
+  font-weight: 900;
+  color: #fff;
 }
 
 
@@ -296,7 +304,6 @@ input:focus, select:focus, textarea:focus {
   ul {
     color: #A8B8CD;
   }
-  
 }
 /* Light mode */
 @media (prefers-color-scheme: light) {
