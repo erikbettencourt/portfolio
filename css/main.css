@@ -274,8 +274,7 @@ input:focus, select:focus, textarea:focus {
   .row {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    gap: 24;
   }
 }
 
