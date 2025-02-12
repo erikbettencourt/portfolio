@@ -105,8 +105,8 @@ li {
 }
 .row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 12px;
   align-self: stretch;
 
 }
@@ -167,7 +167,18 @@ li {
   font-size: 18px;
   line-height: 32px;
 }
-
+.tag {
+  border-radius: 4px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  display: flex;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+}
 
 
 /* Utility Classes */
@@ -245,21 +256,9 @@ input:focus, select:focus, textarea:focus {
 
 /* Responsive */
 @media (max-width: 1000px) {
-  .col {
-    flex-basis: 100%;
-  }
   body {
     padding: 24px;
     max-width: 100%;
-  }
-  .row {
-    display:inline;
-  }
-  .ctaGroup {
-    display: inline;
-  }
-  .cta {
-    margin: 8px;
   }
   .caseStudy {
     padding: 20px;
@@ -301,10 +300,13 @@ input:focus, select:focus, textarea:focus {
   }
   .cta {
     border: 2px solid #37BDF9;
-    background: #1A2132;
   }
   ul {
     color: #A8B8CD;
+  }
+  .tag {
+    background: #1E5842;
+    color: #E2E8F0;
   }
 }
 /* Light mode */
@@ -343,6 +345,9 @@ input:focus, select:focus, textarea:focus {
   }
   .cta {
     border: 2px solid #3D33AB;
-    background: #FFF;
+  }
+  .tag {
+    background: #8F357A;
+    color: #F6F8FF;
   }
 }
