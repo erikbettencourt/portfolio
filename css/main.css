@@ -70,9 +70,9 @@ h4 {
 
 .lede {
   font-family: Inter;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
 }
 .bold {
@@ -105,10 +105,10 @@ li {
 }
 .row {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   align-self: stretch;
-
 }
 .col {
   display: flex;
@@ -137,8 +137,9 @@ li {
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
+  padding-bottom: 24px;
 }
-.keyAchievements {
+.recentProjects {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -174,7 +175,6 @@ li {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  display: flex;
   padding: 4px 8px;
   justify-content: center;
   align-items: center;
@@ -235,7 +235,6 @@ button, .btn {
 }
 .aboutLede {
   font-weight: 800;
-  color: #fff;
 }
 
 
@@ -261,7 +260,15 @@ input:focus, select:focus, textarea:focus {
     max-width: 100%;
   }
   .caseStudy {
-    padding: 20px;
+    padding: 24px;
+  }
+  .aboutMe{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -308,6 +315,9 @@ input:focus, select:focus, textarea:focus {
     background: #1E5842;
     color: #E2E8F0;
   }
+  .aboutLede {
+    color: #fff;
+  }
 }
 /* Light mode */
 @media (prefers-color-scheme: light) {
@@ -345,9 +355,13 @@ input:focus, select:focus, textarea:focus {
   }
   .cta {
     border: 2px solid #3D33AB;
+    background: #fff;
   }
   .tag {
     background: #8F357A;
     color: #F6F8FF;
+  }
+  .aboutLede {
+    color: #1C1C57;
   }
 }
