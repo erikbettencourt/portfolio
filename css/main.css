@@ -32,7 +32,7 @@ p {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 26px;
 }
 a {
     text-decoration: none;
@@ -42,55 +42,56 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 48px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
     letter-spacing: 0.4px;
+    padding-bottom: 8px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 800;
     line-height: 32px;
     letter-spacing: 0.4px;
 }
 h3 {
-  font-size: 24px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
-  line-height: 36px;
-}
-h4 {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 36px;
 }
 
 .lede {
   font-family: Inter;
-  font-size: 20px;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 36px;
+  font-weight: 500;
+  line-height: 28px;
 }
 .bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 .pipe {
   font-weight: 500;
 }
-ul {
-  padding-left: 24px;
-}
-li {
+.about {
   font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px;
-  padding-bottom: 8px;
+  line-height: 27px;
 }
+.tag {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  border-radius: 4px;
+  padding: 4px 8px;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* Layout */
 .container {
@@ -168,21 +169,7 @@ li {
 .avatar {
   width: 144px;
 }
-.about {
-  font-size: 18px;
-  line-height: 32px;
-}
-.tag {
-  border-radius: 4px;
-  font-family: Inter;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  padding: 4px 8px;
-  justify-content: center;
-  align-items: center;
-}
+
 
 
 
@@ -201,30 +188,7 @@ li {
 .p-16 { padding: 16px; }
 
 
-
-
 /* Buttons */
-button, .btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.btn-primary {
-  background-color: #007bff;
-  color: #fff;
-}
-.btn-primary:hover {
-  background-color: #0056b3;
-}
-.btn-secondary {
-  background-color: #6c757d;
-  color: #fff;
-}
-.btn-secondary:hover {
-  background-color: #565e64;
-}
 .cta {
   display: flex;
   padding: 4px 20px;
@@ -232,29 +196,6 @@ button, .btn {
   align-items: center;
   gap: 8px;
   border-radius: 100px;
-}
-.ctaGroup {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.aboutLede {
-  font-weight: 800;
-}
-
-
-
-/* Forms */
-input, select, textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-input:focus, select:focus, textarea:focus {
-  border-color: #007bff;
-  outline: none;
 }
 
 
@@ -264,6 +205,28 @@ input:focus, select:focus, textarea:focus {
     padding: 24px;
     max-width: 100%;
   }
+  p {
+    line-height: 24px;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 19px;
+    line-height: 25px;
+}
+h3 {
+  font-size: 23px;
+  line-height: 30px;
+}
+.lede {
+  font-size: 19px;
+  line-height: 25px;
+}
+.about {
+  font-size: 16px;
+  line-height: 24px;
+}
   .caseStudy {
     padding: 24px;
   }
@@ -315,15 +278,9 @@ input:focus, select:focus, textarea:focus {
   .cta {
     border: 2px solid #37BDF9;
   }
-  ul {
-    color: #A8B8CD;
-  }
   .tag {
     background: #1E5842;
     color: #E2E8F0;
-  }
-  .aboutLede {
-    color: #fff;
   }
 }
 /* Light mode */
@@ -368,9 +325,6 @@ input:focus, select:focus, textarea:focus {
   .tag {
     background: #8F357A;
     color: #F6F8FF;
-  }
-  .aboutLede {
-    color: #1C1C57;
   }
   .arrow {
     color: #3D33AB;
