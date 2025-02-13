@@ -231,8 +231,8 @@ h3 {
     padding: 24px;
   }
   .aboutMe{
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .row {
     display: flex;
