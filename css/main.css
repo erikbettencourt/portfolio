@@ -172,7 +172,6 @@ h3 {
 
 
 
-
 /* Utility Classes */
 .text-center {
   text-align: center;
@@ -207,26 +206,26 @@ h3 {
   }
   p {
     line-height: 24px;
-}
-h1 {
-    font-size: 40px;
-}
-h2 {
+  }
+  h1 {
+      font-size: 40px;
+  }
+  h2 {
+      font-size: 19px;
+      line-height: 25px;
+  }
+  h3 {
+    font-size: 23px;
+    line-height: 30px;
+  }
+  .lede {
     font-size: 19px;
     line-height: 25px;
-}
-h3 {
-  font-size: 23px;
-  line-height: 30px;
-}
-.lede {
-  font-size: 19px;
-  line-height: 25px;
-}
-.about {
-  font-size: 16px;
-  line-height: 24px;
-}
+  }
+  .about {
+    font-size: 16px;
+    line-height: 24px;
+  }
   .caseStudy {
     padding: 24px;
   }
