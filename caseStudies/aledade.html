@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aledade | UX Vision for Value-Based Care Analytics</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        
+        /* Color Variables */
+        :root {
+            --primary-blue: #1e3a8a;
+            --light-blue: #f0f4ff;
+            --gray: #f5f5f5;
+            --dark-text: #1a1a2e;
+            --light-text: #666;
+        }
+        
+        /* Container */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+        
+        .hero-bg {
+            width: 100%;
+            height: 400px;
+            background-image: url('https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/placeholder.svg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.7;
+        }
+        
+        .hero-content {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.05);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+        
+        .logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+        
+        /* Typography */
+        h1, h2, h3, h4 {
+            color: var(--dark-text);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-blue);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 30px;
+            color: var(--primary-blue);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            color: var(--light-text);
+        }
+        
+        /* Project Info Section */
+        .project-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        
+        .info-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .info-column h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+        
+        .info-column p {
+            margin-bottom: 5px;
+        }
+        
+        /* Section styling */
+        .section {
+            margin: 60px 0;
+            padding-top: 20px;
+        }
+        
+        .section-label {
+            color: #6366f1;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+        
+        /* Two column layout */
+        .columns {
+            display: flex;
+            gap: 40px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        /* Image styling */
+        .image-container {
+            margin: 30px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        
+        /* List styling */
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: white;
+            padding: 50px 0;
+            margin-top: 80px;
+        }
+        
+        /* Blue background sections */
+        .blue-bg {
+            background-color: var(--primary-blue);
+            width: 100%;
+            height: 150px;
+            position: absolute;
+            z-index: -1;
+        }
+        
+        .top-blue-bg {
+            top: 0;
+        }
+        
+        .bottom-blue-bg {
+            bottom: 0;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content {
+                position: relative;
+                border-radius: 0;
+                padding: 30px 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.7rem;
+            }
+            
+            .project-info, .columns {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .info-column, .column {
+                min-width: 100%;
+            }
+            
+            .hero-bg {
+                height: 250px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .section {
+                margin: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Blue background bars -->
+    <div class="blue-bg top-blue-bg"></div>
+    <div class="blue-bg bottom-blue-bg"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="container">
+                <svg class="logo" width="180" height="50" viewBox="0 0 180 50">
+                    <text x="10" y="35" fill="#1e3a8a" font-family="Arial" font-weight="bold" font-size="30">Aledade</text>
+                </svg>
+                
+                <h1>Delivering a Scalable UX Vision for Value-Based Care Analytics</h1>
+                
+                <p>Providing real-time performance scorecards through Aledade's app gave practices on-demand access to critical data, enabling them to track progress and optimize value-based care outcomes. Following a successful beta launch with 60 practices, this project aimed to expand the rollout to Aledade's core customer base of 1,500 practices.</p>
+                
+                <div class="project-info">
+                    <div class="info-column">
+                        <h4>My Role</h4>
+                        <p>Formative Research</p>
+                        <p>UX/UI Design</p>
+                        <p>Evaluative Research</p>
+                        <p>UX Strategy</p>
+                    </div>
+                    
+                    <div class="info-column">
+                        <h4>Team</h4>
+                        <p>Product Manager</p>
+                        <p>Business Partners</p>
+                        <p>Shared Engineering Team</p>
+                    </div>
+                    
+                    <div class="info-column">
+                        <h4>Duration</h4>
+                        <p>6 Months</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Discovery Section -->
+        <section class="section">
+            <div class="section-label">Discovery</div>
+            <h2>AI-Powered Research: Faster Insights, Smarter Decisions</h2>
+            
+            <p>We used AI-driven analysis to make sense of large amounts of qualitative and quantitative research quickly and accurately. Instead of manually sifting through interviews and survey responses, AI helped us surface key trends, spot inconsistencies, and uncover patterns that might have been missed otherwise.</p>
+            
+            <div class="columns">
+                <div class="column">
+                    <h3>Turning Conversations Into Actionable Insights</h3>
+                    <p>Our research with Aledade's Practice Transformation Specialists (PTS) gave us a deeper understanding of how practices use performance data. Using AI-powered transcription and topic modeling, we analyzed conversations across multiple markets to identify common pain points and opportunities.</p>
+                    
+                    <p><strong>What AI helped us uncover:</strong></p>
+                    <ul>
+                        <li>Goal setting isn't one-size-fits-all—it's a collaborative, evolving process that varies by practice size, specialty, and experience with value-based care.</li>
+                        <li>Real world data inconsistency affected trust metrics. It eroded the Aledade app showed conflicting metrics, it eroded trust. AI helped us flag inconsistencies across data sources to ensure reliability.</li>
+                        <li>Personalization helped us categorize practices based on behavior and needs, making it easier to design tailored solutions.</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h3>Turning Beta Feedback Into Actionable Insights</h3>
+                    <p>Our research with Aledade's Practice Transformation Specialists (PTS) gave us a deeper understanding of how practices use performance data. Using AI-powered transcription and topic modeling, we analyzed conversations across multiple markets to identify common pain points and opportunities.</p>
+                    
+                    <p><strong>What practices told us (and what AI confirmed):</strong></p>
+                    <ul>
+                        <li>Accuracy is everything. Practices depend on real-time, reliable data to track performance. AI-driven validation helped us ensure data integrity.</li>
+                        <li>Simplicity matters. Users wanted clickable metrics leading to deeper insights and time-range selectors for tracking trends over time.</li>
+                        <li>Benchmarking motivates action. Peer comparisons and color-coded feedback made it easier to spot progress and problem areas at a glance.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- User Journey Section -->
+        <section class="section">
+            <h2>From Pain Points to Opportunities: Mapping the User Journey</h2>
+            
+            <p>Research is only valuable if it drives action. We mapped pain points across the entire performance journey—both for practices and Aledade's teams—to pinpoint friction and high-impact opportunities. Then, we prioritized solutions based on feasibility and impact.</p>
+            
+            <div class="image-container">
+                <img src="/api/placeholder/1000/500" alt="Journey map with pain points and opportunities">
+                <p class="image-caption">Screenshot from Map of journey map with pain points and opportunities</p>
+            </div>
+            
+            <div class="columns">
+                <div class="column">
+                    <h3>Short-Term Improvements</h3>
+                    <ul>
+                        <li>Introduce basic goal configuration</li>
+                        <li>Enhance color-coded progress indicators</li>
+                        <li>Enable drill down into data by context</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h3>Long-Term Opportunities</h3>
+                    <ul>
+                        <li>How might we motivate practices with benchmarking tools?</li>
+                        <li>How might we help practices diagnose issues in performance?</li>
+                        <li>How might we track goal progress and trends?</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- UX/UI Design Section -->
+        <section class="section">
+            <div class="section-label">UX/UI Design</div>
+            <h2>Delivering Key UX/UI Enhancements for Beta Expansion to 1,500 Practices</h2>
+            
+            <p>To scale the beta from 60 to 1,500 practices, we focused on three high-impact UX improvements informed by our research. These enhancements streamlined scorecard usability and seamlessly integrated with existing workflows led by practice transformation specialists.</p>
+            
+            <h3>UX Showcase: Goal Configuration Explorations</h3>
+            
+            <p>For the Navigator practice rollout, goal configuration was a key focus, but the right solution wasn't immediately clear. To reach a design that worked for users, we needed to adapt dramatically—shifting from quarterly to bi-weekly collaboration with practitioners, tailoring the design to their specific workflow needs.</p>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <!-- Footer content would go here -->
+        </div>
+    </footer>
+</body>
+</html>
