@@ -16,6 +16,23 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <script>
+            // Check if nps parameter is present in URL
+            window.addEventListener('load', function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                if (urlParams.has('nps')) {
+                    // Get all case study links
+                    const caseStudyLinks = document.querySelectorAll('.caseStudy .cta');
+                    caseStudyLinks.forEach(link => {
+                        // Change href to NPS version if data-nps-url exists
+                        const npsUrl = link.getAttribute('data-nps-url');
+                        if (npsUrl) {
+                            link.setAttribute('href', npsUrl);
+                        }
+                    });
+                }
+            });
+        </script>
     </head>
     <body>
 
@@ -42,7 +59,9 @@
                         <p>Increased provider engagement by 25% by optimizing value-based care scorecards, improving usability, and streamlining workflow integration. Developed a 12-16 month UX vision to drive long-term adoption and scalability.</p>
                     </div>
                     <div>
-                        <a class="cta" target="_blank" href="https://www.figma.com/proto/wlAG7naU2K93ACOA1nwP8E/Aledade-Case-Study?page-id=531%3A2692&node-id=559-485&viewport=2106%2C988%2C0.15&t=BCioHcbZrRazziRE-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=559%3A485&hide-ui=1">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                        <a class="cta" target="_blank" 
+                           href="https://www.figma.com/proto/wlAG7naU2K93ACOA1nwP8E/Aledade-Case-Study?page-id=531%3A2692&node-id=559-485&viewport=2106%2C988%2C0.15&t=BCioHcbZrRazziRE-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=559%3A485&hide-ui=1"
+                           data-nps-url="http://google.com">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 13 14">
                             <path d="M11.4954 0.953857L4.0284 0.953857C3.49217 0.953663 3.05697 1.38889 3.05697 1.92534C3.05697 2.46199 3.49178 2.89683 4.0284 2.89683L9.14999 2.89702L0.284495 11.763C-0.0949464 12.1425 -0.0949464 12.7574 0.284495 13.1369C0.663742 13.5161 1.27885 13.5161 1.6581 13.1369L10.524 4.2707L10.524 9.39257C10.524 9.92922 10.959 10.3643 11.4956 10.3643C11.7637 10.3643 12.0068 10.2554 12.1824 10.0796C12.3582 9.90396 12.467 9.6609 12.467 9.39277L12.4668 1.92515C12.467 1.38869 12.032 0.953663 11.4954 0.953857Z"/>
                           </svg></a>
                     </div>
@@ -59,7 +78,9 @@
                         <p>Cut operating costs by $60K annually by streamlining digital workflows and eliminating redundancies using design thinking and the Double Diamond framework. Led cross-functional collaboration to ensure seamless implementation.</p>
                     </div>
                     <div>
-                        <a class="cta" target="_blank" href="https://www.figma.com/proto/uHEbIFxnB39lBtjqHfMoFA/Lutron-Case-Study?page-id=531%3A2692&node-id=2560-114484&viewport=5376%2C596%2C0.23&t=nEudgBqjt9Wf1MGa-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2560%3A114484&hide-ui=1">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                        <a class="cta" target="_blank" 
+                           href="https://www.figma.com/proto/uHEbIFxnB39lBtjqHfMoFA/Lutron-Case-Study?page-id=531%3A2692&node-id=2560-114484&viewport=5376%2C596%2C0.23&t=nEudgBqjt9Wf1MGa-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2560%3A114484&hide-ui=1"
+                           data-nps-url="http://google.com">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 13 14">
                             <path d="M11.4954 0.953857L4.0284 0.953857C3.49217 0.953663 3.05697 1.38889 3.05697 1.92534C3.05697 2.46199 3.49178 2.89683 4.0284 2.89683L9.14999 2.89702L0.284495 11.763C-0.0949464 12.1425 -0.0949464 12.7574 0.284495 13.1369C0.663742 13.5161 1.27885 13.5161 1.6581 13.1369L10.524 4.2707L10.524 9.39257C10.524 9.92922 10.959 10.3643 11.4956 10.3643C11.7637 10.3643 12.0068 10.2554 12.1824 10.0796C12.3582 9.90396 12.467 9.6609 12.467 9.39277L12.4668 1.92515C12.467 1.38869 12.032 0.953663 11.4954 0.953857Z"/>
                           </svg></a>
                     </div>
@@ -76,7 +97,9 @@
                         <p>Increased premium feature adoption by 12% and reduced drop-off rates by up to 10% by redesigning event management workflows and onboarding, streamlining the user experience, and improving product integration.</p>
                     </div>
                     <div>
-                        <a class="cta" target="_blank" href="https://www.figma.com/proto/pk4jsPSupDH27mtWopyZRg/Evvnt-Case-Study?page-id=531%3A2692&node-id=559-485&viewport=2553%2C1131%2C0.16&t=oOm7PX7HFTwRdWZM-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=559%3A485&hide-ui=1">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                        <a class="cta" target="_blank" 
+                           href="https://www.figma.com/proto/pk4jsPSupDH27mtWopyZRg/Evvnt-Case-Study?page-id=531%3A2692&node-id=559-485&viewport=2553%2C1131%2C0.16&t=oOm7PX7HFTwRdWZM-8&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=559%3A485&hide-ui=1"
+                           data-nps-url="http://google.com">View Case Study <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 13 14">
                             <path d="M11.4954 0.953857L4.0284 0.953857C3.49217 0.953663 3.05697 1.38889 3.05697 1.92534C3.05697 2.46199 3.49178 2.89683 4.0284 2.89683L9.14999 2.89702L0.284495 11.763C-0.0949464 12.1425 -0.0949464 12.7574 0.284495 13.1369C0.663742 13.5161 1.27885 13.5161 1.6581 13.1369L10.524 4.2707L10.524 9.39257C10.524 9.92922 10.959 10.3643 11.4956 10.3643C11.7637 10.3643 12.0068 10.2554 12.1824 10.0796C12.3582 9.90396 12.467 9.6609 12.467 9.39277L12.4668 1.92515C12.467 1.38869 12.032 0.953663 11.4954 0.953857Z"/>
                           </svg></a>
                     </div>
@@ -95,9 +118,9 @@
             <section class="contactCard">
                 <img class="avatar" src="images/eb-avatar.png" alt="Erik Bettencourt">
                 <h3>Erik Bettencourt</h3>
-                <p>Email: <a href="mailto:embettencourt@gmail.com">embettencourt@gmail.com</a></p>
-                <p>Phone: <a href="tel:+19788842865">(978)&nbsp;884&#8209;2865</a></p>
-                <a href="https://linkedin.com/in/erikbettencourt" target="_blank">LinkedIn <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14">
+                <p><a href="mailto:embettencourt@gmail.com">embettencourt@gmail.com</a></p>
+                <p><a href="tel:+19788842865">(978)&nbsp;884&#8209;2865</a></p>
+                <a href="https://linkedin.com/in/erikbettencourt" target="_blank">LinkedIn <svg xmlns="http://www.w3.org/2000/svg" width="10" height="11" viewBox="0 0 13 14">
                     <path d="M11.4954 0.953857L4.0284 0.953857C3.49217 0.953663 3.05697 1.38889 3.05697 1.92534C3.05697 2.46199 3.49178 2.89683 4.0284 2.89683L9.14999 2.89702L0.284495 11.763C-0.0949464 12.1425 -0.0949464 12.7574 0.284495 13.1369C0.663742 13.5161 1.27885 13.5161 1.6581 13.1369L10.524 4.2707L10.524 9.39257C10.524 9.92922 10.959 10.3643 11.4956 10.3643C11.7637 10.3643 12.0068 10.2554 12.1824 10.0796C12.3582 9.90396 12.467 9.6609 12.467 9.39277L12.4668 1.92515C12.467 1.38869 12.032 0.953663 11.4954 0.953857Z"/>
                   </svg></a>
             </section>

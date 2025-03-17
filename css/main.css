@@ -34,13 +34,6 @@ p {
     font-weight: 400;
     line-height: 26px;
 }
-a {
-    text-decoration: none;
-    font-size: 16px;
-}
-a:hover {
-    text-decoration: underline;
-}
 h1 {
     font-size: 45px;
     font-style: normal;
@@ -62,6 +55,14 @@ h3 {
   font-weight: 700;
   line-height: 36px;
 }
+a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 .lede {
   font-family: Inter;
@@ -70,6 +71,7 @@ h3 {
   font-weight: 500;
   line-height: 28px;
 }
+
 .bold {
   font-weight: 800;
 }
@@ -187,15 +189,6 @@ h3 {
 .p-16 { padding: 16px; }
 
 
-/* Buttons */
-.cta {
-  display: flex;
-  padding: 4px 20px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border-radius: 100px;
-}
 
 
 /* Responsive */
@@ -274,9 +267,6 @@ h3 {
     border: 1px solid #353F4F;
     background: #1D293B;
   }
-  .cta {
-    border: 2px solid #37BDF9;
-  }
   .tag {
     background: #1E5842;
     color: #E2E8F0;
@@ -289,9 +279,6 @@ h3 {
   }
   p {
     color: #333;
-  }
-  a {
-    color: #3D33AB;
   }
 
   h1 {
@@ -316,11 +303,7 @@ h3 {
     border: 1px solid #C9D6FE;
     background: #F2F5FF;
   }
-  .cta {
-    border: 2px solid #3D33AB;
-    background: #fff;
-    fill: #3D33AB;
-  }
+
   .tag {
     background: #8F357A;
     color: #F6F8FF;
@@ -328,4 +311,44 @@ h3 {
   .arrow {
     color: #3D33AB;
   }
+}
+
+/* Images */
+
+
+/* Lists */
+ul {
+  padding-left: 24px;
+  margin: 16px 0;
+  list-style: disc;
+}
+
+ul li {
+  margin-bottom: 12px;
+  list-style: disc;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
+}
+
+.contactCard {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.contactCard h3 {
+  margin: 4px 0;
+}
+
+.contactCard p,
+.contactCard a {
+  margin: 0;
+}
+
+.contactCard .avatar {
+  margin-bottom: 4px;
 }
