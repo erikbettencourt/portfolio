@@ -75,16 +75,14 @@
   }
 
   .password-form input {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-color: rgba(255, 255, 255, 0.2);
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1);
   }
 
   .password-form input:focus {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.3);
   }
-
-
 
   .gradient-text {
     background: linear-gradient(90deg, var(--gradient-1) 20%, var(--gradient-2) 50%, var(--gradient-3) 90%);
@@ -425,11 +423,24 @@ section {
 }
 
 .password-form {
-  background: var(--card-bg);
+  background: #ffffff;
   padding: var(--space-md);
   border-radius: 8px;
   text-align: center;
   max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.password-form h4 {
+  color: #1c1c57;
+  margin-bottom: var(--space-xs);
+}
+
+.password-form-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: #333333;
+  margin: var(--space-xs) 0;
 }
 
 .password-form input {
@@ -440,13 +451,14 @@ section {
   font-family: 'Inter', sans-serif;
   width: 100%;
   height: 40px;
-  background-color: rgba(0, 0, 0, 0.03);
+  background-color: #ffffff;
+  color: #333333;
 }
 
 .password-form input:focus {
   outline: none;
   border-color: rgba(0, 0, 0, 0.3);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
 }
 
 .password-form button {
@@ -474,13 +486,6 @@ section {
   font-size: 14px;
   width: 100%;
   text-align: left;
-}
-
-.password-form-text {
-  font-size: 14px;
-  line-height: 20px;
-  color: var(--text-secondary);
-  margin: var(--space-xs) 0;
 }
 
 /* Tablet (768px) */
