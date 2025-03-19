@@ -129,6 +129,7 @@ p {
 ul {
   list-style-position: inside;
   padding-left: 0;
+  margin-bottom: var(--space-md);
 }
 
 li {
@@ -136,6 +137,11 @@ li {
   line-height: 24px;
   padding-left: var(--space-md);
   text-indent: calc(-1 * var(--space-md));
+  margin-bottom: var(--space-xs);
+}
+
+li:last-child {
+  margin-bottom: 0;
 }
 
 h1 {
@@ -292,6 +298,11 @@ section {
   margin-bottom: var(--space-md);
 }
 
+.evvnt-logo {
+  width: 140px;
+  margin-bottom: var(--space-md);
+}
+
 /* Section dividers */
 .section-divider {
   height: var(--space-md);
@@ -392,6 +403,12 @@ section {
   flex-direction: column;
   align-items: center;
   gap: var(--space-xs);
+  padding: var(--space-md);
+  border-radius: 8px;
+}
+
+.contactCard.alt {
+  background-color: var(--section-alt-bg);
 }
 
 .contactCard h3 {
@@ -510,7 +527,7 @@ section {
   
   .impact-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--space-lg);
+    gap: var(--space-md);
   }
 }
 
@@ -603,4 +620,13 @@ section {
 /* Add margin to co-design section */
 .co-design {
   margin: var(--space-2xl) 0;
+}
+
+.info-columns ul {
+  list-style: none;
+}
+
+.info-columns li {
+  padding-left: 0;
+  text-indent: 0;
 }
