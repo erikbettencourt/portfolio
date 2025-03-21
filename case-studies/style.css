@@ -111,6 +111,7 @@ body {
 a {
   text-decoration: none;
   transition: text-decoration 0.2s ease;
+  font-weight: 600;
 }
 
 a:hover {
@@ -405,6 +406,7 @@ section {
   gap: var(--space-xs);
   padding: var(--space-md);
   border-radius: 8px;
+  margin-bottom: var(--space-xl);
 }
 
 .contactCard.alt {
