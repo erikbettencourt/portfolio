@@ -243,7 +243,7 @@ a:hover {
   }
   a {
     color: #37BDF9;
-    fill: #37BDF9;
+  
   }
   h1 {
     color: #E2E8F0;
@@ -269,7 +269,7 @@ a:hover {
   }
   .tag {
     background: #1E5842;
-    color: #E2E8F0;
+    color: #CDE7DD;
   }
 }
 /* Light mode */
@@ -279,6 +279,9 @@ a:hover {
   }
   p {
     color: #333;
+  }
+  a {
+    color: #3D33AB;
   }
 
   h1 {
@@ -312,8 +315,6 @@ a:hover {
     color: #3D33AB;
   }
 }
-
-/* Images */
 
 
 /* Lists */
@@ -351,4 +352,24 @@ ul li:last-child {
 
 .contactCard .avatar {
   margin-bottom: 4px;
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1;
+}
+
+.cta span {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cta svg {
+  display: inline-flex;
+  align-items: center;
+  width: 16px;
+  height: 17px;
+  flex-shrink: 0;
 }
