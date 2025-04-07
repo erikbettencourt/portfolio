@@ -406,7 +406,7 @@ section {
   gap: var(--space-xs);
   padding: var(--space-md);
   border-radius: 8px;
-  margin-bottom: var(--space-xl);
+  padding-bottom: 44px;
 }
 
 .contactCard.alt {
