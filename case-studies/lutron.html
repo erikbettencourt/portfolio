@@ -208,8 +208,11 @@
         window.addEventListener('load', function() {
             const urlParams = new URLSearchParams(window.location.search);
             if (urlParams.has('nps')) {
-                document.getElementById('password-overlay').classList.add('visible');
+                document.querySelector('.container').style.display = 'block';
+                document.getElementById('password-overlay').style.display = 'none';
+                return;
             }
+            document.getElementById('password-overlay').classList.add('visible');
         });
 
         function checkPassword() {
@@ -217,6 +220,7 @@
             const errorMessage = document.getElementById('error-message');
             
             if (password === 'lutron') {
+                document.querySelector('.container').style.display = 'block';
                 document.getElementById('password-overlay').style.display = 'none';
             } else {
                 errorMessage.style.display = 'block';
