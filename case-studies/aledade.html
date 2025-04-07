@@ -250,6 +250,13 @@
           errorMessage.style.display = 'block';
         }
       }
+
+      // Add event listener for enter key
+      document.getElementById('password-input').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          checkPassword();
+        }
+      });
     </script>
   </body>
 </html>
