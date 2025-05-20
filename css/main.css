@@ -151,7 +151,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   align-self: stretch;
   padding-top: 16px;
   padding-bottom: 16px;
